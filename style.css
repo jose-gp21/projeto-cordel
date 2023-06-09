@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Edu+NSW+ACT+Foundation&family=Shadows+Into+Light&display=swap');
+:root{
+    --font1: Verdana, Genva, sans-serif;
+    --fontep: 'Comic Neue', cursiva;
+    --fontfoot: system-ui, 'apple-system'
+}
 
 *{
     margin: 0px;
@@ -12,13 +18,18 @@ header{
     background-color: black;
     color: white;
     text-align: center;
+
 }
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-size:7vw;
+    font-family: var(--font1);
 }
 header>p{
+    padding-top: 10px;
     padding-bottom: 50px;
+    font: normal 1.1em var(--fontfoot);
 }
 a{
     color: white;
@@ -33,19 +44,37 @@ section{
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
+    font-family: var(--fontep);
+    font-size: 3.5vw;
 }
 section.normal{
     background-color: aliceblue;
 }
 section.imagem{
-    background-color: rgb(70, 68, 68);
+    background-color: rgb(53, 53, 53);
     color: rgb(255, 255, 255);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.77);
 }
 section.imagem>p{
-    background-color: rgba(0, 0, 0, 0.137);
-    width: 400px;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 2px 0 black;
+}
+section.q1{
+    background-image: url("imagens/background001.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.q2{
+    background-image: url("imagens/background002.jpg");
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 footer{
+    font-family: var(--fontfoot)n;
     background-color: black;
     text-align: center;
     color: rgb(247, 247, 247);
